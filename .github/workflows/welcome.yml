@@ -1,0 +1,12 @@
+name: Welcome Workflow
+on: [push]  # Runs when code is pushed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Display a Message
+        run: echo "Hello, GitHub Actions!"
